@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abderrahim El Ouardi – Data Scientist</title>
+<meta name="description" content="Portfolio d'Abderrahim El Ouardi : Data Science, Machine Learning, LLM et RAG. Recherche un stage de fin d'études de 6 mois.">
+<meta property="og:title" content="Abderrahim El Ouardi – Data Scientist">
+<meta property="og:description" content="Projets en Machine Learning, vision par ordinateur, LLM et RAG.">
+<meta name="theme-color" content="#0f2342">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cairo:wght@400;500;700;800&display=swap">
+<link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="progress"></div>
+<button id="topBtn" aria-label="Retour en haut">↑</button>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top" id="brand"></a>
+  <nav id="menu"></nav>
+  <div class="lang" id="lang" role="group" aria-label="Language"></div>
+  <button class="icon-btn" id="theme" aria-label="Changer de thème" title="Changer de thème">◐</button>
+</div></header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <div class="avatar" id="avatar"></div>
+      <div class="badge"><i></i><span id="avail"></span></div>
+      <h1 id="name"></h1>
+      <p class="role" id="role"></p>
+      <p class="lead" id="lead"></p>
+      <div class="btns" id="heroBtns"></div>
+    </div>
+    <figure class="signal" style="margin:0">
+      <canvas id="sig" role="img" aria-label="Animation : un filtre de Kalman lisse un signal bruité"></canvas>
+      <figcaption><span><b style="background:var(--muted)"></b>Mesures bruitées</span><span><b style="background:var(--accent)"></b>Estimation (filtre de Kalman)</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <section id="apropos"><h2>À propos</h2><p class="about" id="about"></p></section>
+  <section id="experience"><h2>Expérience</h2><div class="tl" id="exp"></div></section>
+  <section id="projets"><h2>Projets</h2><div class="filters" id="filters"></div><div class="grid" id="projects"></div></section>
+  <section id="competences"><h2>Compétences</h2><div class="skills" id="skills"></div></section>
+  <section id="formation"><h2>Formation</h2><div class="edu-tl" id="edu"></div><p class="note" id="extra"></p></section>
+  <section class="contact" id="contact"><h2>Travaillons ensemble</h2><p id="contactText"></p><div id="contactBtns"></div></section>
+  <section id="assistant"><h2>Posez vos questions</h2>
+    <div class="chat">
+      <div id="log" role="log" aria-live="polite"></div>
+      <div class="sugg" id="sugg"></div>
+      <form id="chatForm"><input id="q" type="text" placeholder="Votre question…" aria-label="Votre question" autocomplete="off" maxlength="300"><button class="btn primary" type="submit">Envoyer</button></form>
+    </div>
+    <p class="note">Les réponses sont générées à partir des informations de ce portfolio. Pour tout le reste, écrivez directement par email.</p>
+  </section>
+</main>
+<footer id="foot"></footer>
+<dialog id="dlg" aria-labelledby="dT"><button class="icon-btn x" id="dX" aria-label="Fermer">✕</button><div id="dB"></div></dialog>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
